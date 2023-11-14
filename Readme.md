@@ -7,6 +7,7 @@
 # jenkins server should have kubeconfig available to interact with HA kubernetes cluster
 # HA kubernetes cluster should have nginx-ingress controller configured using helm
 # Configure DNS for Loadbalancer IP
+# To user mysql database comment the H2 config in Application.properties file
 
 #Pipeline View
 #Git clone---> Build with maven ---> create image using Dockerfile--> push image to dockerhub --> Deploy the application using deployment,service and ingress on kubernetes cluster
