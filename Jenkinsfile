@@ -37,6 +37,7 @@ pipeline{
         stage('Deploy the application'){
             steps{
                 sh '''
+                 kubectl apply -f mysqldb.yaml
                  kubectl apply -f main.yaml
                 '''
             }
